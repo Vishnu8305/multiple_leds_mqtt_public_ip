@@ -2,17 +2,17 @@
 #include <PubSubClient.h>
 
 // Wi-Fi credentials
-const char* ssid = "Vishnu";
-const char* password = "sainath2001";
+const char* ssid = "xxxxxxxx";//wifi ssid 
+const char* password = "xxxxxxxxxx"; // wifi password
 
 // MQTT broker details
-const char* mqtt_broker = "34.131.184.52";
-const int mqtt_port = 1883;
+const char* mqtt_broker = "xxxxxxxxx";//( broker.hivemq.com ) mqtt broker 
+const int mqtt_port = 1883;//mqqtt port
 const char* commandTopics[] = {
     "home/switch1", "home/switch2", "home/switch3", "home/switch4",
     "home/switch5", "home/switch6", "home/switch7", "home/switch8",
     "home/switch9", "home/switch10", "home/switch11", "home/switch12"
-};
+};               // mqtt topic
 const int ledPins[] = {15, 2, 0, 4, 16, 17, 5, 18, 19, 13, 12, 14};
 
 // WiFi and MQTT clients
